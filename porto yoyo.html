@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yoanes - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @media (min-width: 768px) {
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .text-content {
+                width: 50%;
+            }
+
+            .hero-image img {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fire-sparks-container">
+        <div class="fire-sparks"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Yo</h1>
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="text-content">
+                <h1>I'm <span class="name">Yoanes</span></h1>
+                <p>Welcome to my portfolio website</p>
+                <div id="movingCircles"></div>
+                <a href="#" class="get-started-button" id="getStartedButton">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="foto-yoyo.png" alt="Your Image">
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <section id="about" class="about" id="about-section">
+        <div class="about-content">
+            <h2 class="bout-me">About Me</h2>
+            
+            <div class="profile-section">
+                <div id="profile-picture-container" class="profile-picture-container">
+                    <img id="profile-picture" src="foto-yoyo2.png" alt="Your Profile Picture">
+                </div>
+                
+                <div class="education-section">
+                    <h2 class="ducation">Education</h2>
+                    <ul>
+                        <li><span class="tahun">2009-2015</span> SDN 003 Belakang Padang</li>
+                        <li> <span class="tahun">2015-2018</span> SMPN 1 Belakang Padang, Batam</li>
+                        <li><span class="tahun">2018-2021</span> SMAN 2 Belakang Padang, Batam</li>
+                        <li><span class="tahun">2021-current</span> Institut Teknologi Batam</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="section-center">
+                <h2 class="skills-head">Skills</h2>
+                <div class="kotak-skill">
+                    <div class="symbol-container"></div>
+                    <div class="symbol-container2"></div>
+                    <div class="symbol-container3"></div>
+                    <div class="symbol-container4"></div>
+                    <div class="symbol-container5"></div>
+                </div>
+            </div>
+        
+     
+            <div class="section-center">
+                <h2 class="work-head">Work Experience</h2>
+                <ul class="list-work">
+                    <li><span class="tahun">2023</span> Sabila Craft Batam</li>
+            
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-gallery-divider"></div>
+
+    <section id="gallery" class="gallery" id="gallery-section">
+        <div class="container">
+            <h2>My Gallery</h2>
+            <div class="gallery-items">
+                <div class="gallery-item">
+                    <img src="Img-1.png" alt="Image 1">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Img-2.png" alt="Image 2">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Img-3.jpg" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-4.jpg" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-5.png" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-6.png" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-7.jpg" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-8.jpg" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-9.png" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-10.png" alt="Image 2">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Img-11.png" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <form id="contact-form" class="contact-form" action="thank-you.html" method="post">
+                <h3>Contact Me</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Yoanes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.nav-list a');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        scrollToTarget(targetElement);
+                    }
+                });
+            });
+        
+            function scrollToTarget(targetElement) {
+                const offsetTop = targetElement.offsetTop;
+                const offset = targetElement.id === 'contact' ? 80 : 60;
+                window.scroll({
+                    top: offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            }
+        
+            window.addEventListener('scroll', function () {
+                const scrollPosition = window.scrollY;
+                document.querySelectorAll('section').forEach(function (section) {
+                    const sectionId = section.id;
+                    const navLink = document.querySelector(`.nav-list a[href="#${sectionId}"]`);
+                    if (navLink) {
+                        const rect = section.getBoundingClientRect();
+                        const offset = sectionId === 'contact' ? 80 : 60;
+                        if (rect.top <= offset && rect.bottom >= offset) {
+                            navLink.classList.add('active');
+                        } else {
+                            navLink.classList.remove('active');
+                        }
+                    }
+                });
+            });
+        
+            const movingCirclesContainer = document.getElementById("movingCircles");
+            const heroSection = document.getElementById("hero");
+            const numberOfCircles = 10;
+            const circleColor = "#ff1d72";
+            function createCircle() {
+                const circle = document.createElement("div");
+                circle.className = "circle";
+                circle.style.background = circleColor;
+                movingCirclesContainer.appendChild(circle);
+                animateCircle(circle);
+            }
+        
+            function animateCircle(circle) {
+                function move() {
+                    const maxWidth = heroSection.clientWidth;
+                    const maxHeight = heroSection.clientHeight;
+                    const randomX = Math.random() * (maxWidth - circle.clientWidth);
+                    const randomY = Math.random() * (maxHeight - circle.clientHeight);
+                    circle.style.transform = `translate(${randomX}px, ${randomY}px)`;
+                    requestAnimationFrame(move);
+                }
+        
+                move();
+            }
+        
+            for (let i = 0; i < numberOfCircles; i++) {
+                createCircle();
+            }
+        
+            const getStartedButton = document.getElementById("getStartedButton");
+        
+            if (getStartedButton) {
+                getStartedButton.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    scrollToTarget(document.getElementById("about"));
+                });
+            }
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const fireSparksContainer = document.querySelector('.fire-sparks-container');
+            createSparks(fireSparksContainer);
+        
+            function createSparks(fireSparksContainer) {
+                const numberOfSparks = 200;
+                for (let i = 0; i < numberOfSparks; i++) {
+                    createSpark();
+                }
+        
+                function createSpark() {
+                    const spark = document.createElement('div');
+                    spark.className = 'spark';
+                    fireSparksContainer.appendChild(spark);
+                    animateSpark(spark);
+                }
+        
+                function animateSpark(spark) {
+                    const maxWidth = fireSparksContainer.clientWidth;
+                    const maxHeight = fireSparksContainer.clientHeight;
+                    const randomX = Math.random() * maxWidth;
+                    const randomY = Math.random() * maxHeight;
+                    spark.style.left = `${randomX}px`;
+                    spark.style.top = `${randomY}px`;
+                    const animationDuration = Math.random() * 20 + 20;
+                    const animationDelay = Math.random() * 5;
+                    spark.style.animation = `spark-move ${animationDuration}s linear ${animationDelay}s infinite`;
+                }
+            }
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const heroImage = document.querySelector(".hero-image");
+        
+            function adjustImagePosition() {
+                const windowWidth = window.innerWidth
+        
+                if (windowWidth >= 768) {
+                    heroImage.style.display = "flex";
+                } else {
+                   
+                    heroImage.style.display = "block";
+                }
+            }
+        
+            
+            adjustImagePosition();
+        
+            
+            window.addEventListener("resize", adjustImagePosition);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const profilePictureContainer = document.getElementById("profile-picture-container");
+    const profilePicture = document.getElementById("profile-picture");
+
+    const containerRect = profilePictureContainer.getBoundingClientRect();
+
+    profilePictureContainer.addEventListener("mouseenter", function () {
+        const scaleFactor = 1.8;
+        const offsetX = (scaleFactor - 1) * containerRect.width / 30;
+        const offsetY = (scaleFactor - 1.4) * containerRect.height / 40;
+
+        profilePicture.style.transition = "transform 0.3s ease";
+        profilePicture.style.transform = `translate(-${offsetX}px, -${offsetY}px) scale(${scaleFactor})`;
+        profilePicture.style.zIndex = "900"; 
+    });
+
+    profilePictureContainer.addEventListener("mouseleave", function () {
+        profilePicture.style.transition = "transform 0.3s ease";
+        profilePicture.style.transform = "translate(0, 0) scale(1)";
+        profilePicture.style.zIndex = "0"; 
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("about");
+    const divider = document.querySelector(".about-gallery-divider");
+
+   
+    const aboutSectionBottom = aboutSection.offsetTop + aboutSection.offsetHeight;
+    divider.style.top = aboutSectionBottom + "px";
+});
+        </script>
+        
+</body>
+</html>
